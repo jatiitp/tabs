@@ -1,0 +1,34 @@
+<div >
+  <div id="snackbar">{{snackHead}}</div>
+  <div class="container">
+        <div class="col-lg-6 col-md-6 own-tabs" >
+            <ul class="nav nav-pills ui-pills-fin ul-background-jat">
+                <li class="active" ng-click="switchTabs(1)">
+                    <a data-toggle="pill" class="">Home</a>
+                </li>
+                <li ng-click="switchTabs(2)">
+                    <a data-toggle="pill" class="">Services</a>
+                </li>
+                <li ng-click="switchTabs(3)">
+                    <a data-toggle="pill" class="">Products</a>
+                </li>
+                <li ng-click="switchTabs(4)">
+                    <a data-toggle="pill" class="">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-12 content" ng-if="isTab1">
+            This is our Home tab
+        </div>
+        <div class="col-md-12 content" ng-if="isTab2">
+            This is our Services tab
+        </div>
+        <div class="col-md-12 content" ng-if="isTab3">
+            This is our Products tab
+        </div>
+        <div class="col-md-12 content" ng-if="isTab4">
+            This is our Contact tab
+        </div>
+    </div>
+  </div>
+</div>
